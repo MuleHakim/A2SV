@@ -1,7 +1,5 @@
 class Solution:
     def smallestSubsequence(self, s: str) -> str:
-        if not s:
-            return ""
         stack = []
         count = collections.Counter(s)
         for ch in s:
