@@ -2,8 +2,7 @@ class RandomizedSet:
 
     def __init__(self):
         self.set_ = set()
-        # self.val = val
-
+        
     def insert(self, val: int) -> bool:
         if val not in self.set_: 
             self.set_.add(val)
@@ -17,7 +16,7 @@ class RandomizedSet:
         return False
 
     def getRandom(self) -> int:
-        return random.sample(self.set_,1)[0]
+        return random.choice(list(self.set_))
 
 
 # Your RandomizedSet object will be instantiated and called as such:
